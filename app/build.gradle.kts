@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.erdemserhat.codeexplorer_recyclerview"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.erdemserhat.codeexplorer_recyclerview"
         minSdk = 26
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 

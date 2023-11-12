@@ -2,9 +2,11 @@ package com.erdemserhat.codeexplorer_recyclerview.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.erdemserhat.codeexplorer_recyclerview.R
 import com.erdemserhat.codeexplorer_recyclerview.databinding.ActivityMainBinding
 import com.erdemserhat.codeexplorer_recyclerview.model.ProgrammingLanguage
+import com.erdemserhat.codeexplorer_recyclerview.view_model.ProgrammingLanguageAdapter
 
 class MainActivity : AppCompatActivity() {
     //View Binding
@@ -35,6 +37,11 @@ class MainActivity : AppCompatActivity() {
         val programmingLanguageList:List<ProgrammingLanguage> = listOf(java,python,javaScript,cplus)
 
         //We need to crate an adapter for recycler view ( to bind data and views together)...
+
+        val adapter = ProgrammingLanguageAdapter(programmingLanguageList)
+
+        binding.recyclerView.adapter= adapter
+        binding.recyclerView.layoutManager = LinearLayoutManager(this)
 
 
 
