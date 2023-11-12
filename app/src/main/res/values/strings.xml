@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CodeExplorer-RecyclerView</string>
+    <string name="javaName">Java</string>
+    <string name="javaDescription">Java is a programming language developed by Sun Microsystems and currently supported by Oracle Corporation. It is an object-oriented language that is platform-independent, meaning a program written in Java can run on different platforms. Java is commonly used in large-scale enterprise applications, mobile applications, and web-based systems. One of Java\'s strengths is automatic memory management through garbage collection.</string>
+
+    <string name="javaScriptName">Java</string>
+    <string name="javaScriptDescription">JavaScript is a programming language that runs in web browsers and makes web pages interactive. Initially developed by Netscape, JavaScript is now supported by all modern browsers. JavaScript is a fundamental component of web development and, when used in conjunction with technologies like AJAX, enables interactivity between web pages. It can also be used on the server side with platforms like Node.js.</string>
+
+    <string name="pythonName">Java</string>
+    <string name="pythonDescription">Python is an open-source, high-level programming language known for its readable and understandable syntax. As a dynamically-typed language, Python is often used for rapid prototyping, data analysis, artificial intelligence, and web development. Python has a vast library and module ecosystem, providing developers with tools to easily perform a variety of tasks.</string>
+
+    <string name="cplusName">Java</string>
+    <string name="cplusDescription">C++ is an extension of the C programming language developed by Bell Labs. It encompasses both low-level features (such as memory management) and high-level features (like object-oriented programming). C++ is commonly used in performance-critical applications, game development, system programming, and embedded systems. With an extensive standard library, C++ is considered a flexible language suitable for a wide range of applications.</string>
+</resources>
