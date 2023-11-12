@@ -7,6 +7,7 @@ import androidx.appcompat.content.res.AppCompatResources
 import androidx.recyclerview.widget.RecyclerView
 import com.erdemserhat.codeexplorer_recyclerview.databinding.RecyclerViewRowLayoutBinding
 import com.erdemserhat.codeexplorer_recyclerview.model.ProgrammingLanguage
+import com.erdemserhat.codeexplorer_recyclerview.view.ListSingleton
 
 /**
  * Adapter for the RecyclerView that displays a list of programming languages.
@@ -61,6 +62,8 @@ class ProgrammingLanguageAdapter(val programmingLanguageList: List<ProgrammingLa
         return ProgrammingLanguageHolder(binding)
 
 
+
+
     }
 
     override fun getItemCount(): Int {
@@ -68,9 +71,15 @@ class ProgrammingLanguageAdapter(val programmingLanguageList: List<ProgrammingLa
     }
 
     override fun onBindViewHolder(holder: ProgrammingLanguageHolder, position: Int) {
-        holder.binding.name.text=programmingLanguageList[position].name
-        holder.binding.description.text=programmingLanguageList[position].description
-        holder.binding.image.setImageDrawable(AppCompatResources.getDrawable(holder.itemView.context,programmingLanguageList[position].id))
+        //You can also reach with globalList-->globalList (less security)
+        //You can also reach with Singleton-->ListSingleton.programmingLanguageList(
+        //You can also reach with programmingLanguageList (attributed)
+
+
+
+        holder.binding.name.text=ListSingleton.programmingLanguageList[position].name
+        holder.binding.description.text=ListSingleton.programmingLanguageList[position].description
+        holder.binding.image.setImageDrawable(AppCompatResources.getDrawable(holder.itemView.context,ListSingleton.programmingLanguageList[position].id))
 
     }
 

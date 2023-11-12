@@ -8,6 +8,15 @@ import com.erdemserhat.codeexplorer_recyclerview.databinding.ActivityMainBinding
 import com.erdemserhat.codeexplorer_recyclerview.model.ProgrammingLanguage
 import com.erdemserhat.codeexplorer_recyclerview.view_model.ProgrammingLanguageAdapter
 
+/**
+ * If you decalre a variable above the class this variable can been seen every class
+ *  This is a top-level property, often referred to as a global variable
+ */
+
+var exampleGlobalVariable:Any? = null
+
+lateinit var globalList:List<ProgrammingLanguage>
+
 class MainActivity : AppCompatActivity() {
     //View Binding
     private lateinit var binding:ActivityMainBinding
@@ -30,11 +39,13 @@ class MainActivity : AppCompatActivity() {
             R.drawable.java_script
         )
         val cplus: ProgrammingLanguage = ProgrammingLanguage("C++",getString(R.string.cplusDescription),
-            R.drawable.java_script
+            R.drawable.cplus
         )
 
         //static list
         val programmingLanguageList:List<ProgrammingLanguage> = listOf(java,python,javaScript,cplus)
+        globalList=programmingLanguageList
+        ListSingleton.programmingLanguageList=programmingLanguageList
 
         //We need to crate an adapter for recycler view ( to bind data and views together)...
 
