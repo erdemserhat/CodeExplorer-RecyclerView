@@ -8,5 +8,4 @@ object ListSingleton {
 
 
     lateinit var programmingLanguageList: List<ProgrammingLanguage>
-
 }
