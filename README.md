@@ -26,6 +26,6 @@ Key points to understand about RecyclerView:
 2. **LayoutManager:** Understanding different LayoutManagers available in RecyclerView for handling various layouts (e.g., LinearLayoutManager, GridLayoutManager, StaggeredGridLayoutManager).
 3. **Adapter and Data Binding:** Understanding how RecyclerView.Adapter works and its differences compared to ListView's adapter in terms of binding data to views.
 
-##Sample Video
+## Sample Video
 
 [Screen_recording_20231114_125946.webm](https://github.com/erdemserhat/CodeExplorer-RecyclerView/assets/116950260/659b0c29-e762-47fa-a1d7-7a506993a018)
